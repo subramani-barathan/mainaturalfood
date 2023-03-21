@@ -123,8 +123,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12"><img alt="images" src="images/map.png" width="100%">
-                <div class="maps"><!--             <div id="page_maps"></div>  --></div>
+            <div class="col-md-12">
+                <div class="maps" >            <div id="page_maps"></div> </div>
                 <script>
                     // Note: This example requires that you consent to location sharing when
                     // prompted by your browser. If you see the error "The Geolocation service
@@ -132,7 +132,7 @@
                     // locate you.
                     function initMap() {
                         var map = new google.maps.Map(document.getElementById('page_maps'), {
-                            center: { lat: 10.9409205, lng: 78.1022469 },
+                            center: { lat: 10.8431701, lng: 78.1201182 },
                             zoom: 16,
                         });
                         var infoWindow = new google.maps.InfoWindow({ map: map });
@@ -144,7 +144,7 @@
                                     lng: position.coords.longitude
                                 };
                                 infoWindow.setPosition(pos);
-                                infoWindow.setContent('<p><strong> Mai Natural Foods</strong><br/>2-F/2, Indira Nagar,<br/>Gandhigram South,<br/>Karur, Tamilnadu.<br/>INDIA - 639 004.</p>');
+                                infoWindow.setContent('<p><strong>MAI Natural Foods</strong><br>Door No:1/69,<br>Dindigul to Karur main road,<br>Near to Anjaneya swamy Temple,<br>Vellianai,<br>KARUR- 639 118.</p><p>Email: query@mainaturalfoods.in<br>Mobile: +91 97861 84559<br>Web: www.mainaturalfoods.in</p>');
                                 map.setCenter(pos);
                             }, function () {
                                 handleLocationError(true, infoWindow, map.getCenter());
